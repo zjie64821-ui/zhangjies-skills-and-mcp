@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "glm-mcp": {
+      "command": "python3",
+      "args": ["~/.claude/glm-mcp-server/main.py"],
+      "env": {
+        "GLM_API_KEY": "YOUR_GLM_API_KEY_HERE",
+        "GLM_API_BASE": "https://open.bigmodel.cn/api/paas/v4/",
+        "GLM_IMAGE_MODEL": "glm-4v-flash"
+      }
+    }
+  }
+}

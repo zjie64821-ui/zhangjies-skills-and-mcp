@@ -1,0 +1,8 @@
+# 智谱 AI SDK
+zhipuai>=4.0.0
+
+# MCP (Model Context Protocol) - 使用官方包
+mcp>=1.13.0
+
+# 环境变量管理
+python-dotenv>=1.0.0

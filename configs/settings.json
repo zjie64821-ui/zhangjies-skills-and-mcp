@@ -1,0 +1,13 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "YOUR_API_KEY_HERE",
+    "ANTHROPIC_BASE_URL": "https://ark.cn-beijing.volces.com/api/coding",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-5.1",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "kimi-k2.6",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "minimax-m2.7",
+    "ANTHROPIC_MODEL": "glm-5.1"
+  },
+  "model": "opus",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "light-daltonized"
+}
