@@ -1,68 +1,12 @@
-# 文件式规划 (Planning with Files)
+---
+description: "Start Manus-style file-based planning. Creates task_plan.md, findings.md, progress.md for complex tasks."
+---
 
-Manus 风格的文件化任务规划方法，将文件系统作为持久化工作记忆。
+Invoke the planning-with-files:planning-with-files skill and follow it exactly as presented to you.
 
-## 核心理念
-```
-Context Window = RAM (易失、有限)
-Filesystem = Disk (持久、无限)
-→ 所有重要信息必须写入磁盘
-```
+Create the three planning files in the current project directory if they don't exist:
+- task_plan.md — for phases, progress, and decisions
+- findings.md — for research and discoveries
+- progress.md — for session logging
 
-## 规划文件
-
-在项目目录下创建三个文件：
-
-### task_plan.md — 阶段跟踪
-```markdown
-# 任务计划
-## 目标
-[明确的目标陈述]
-
-## 阶段
-### Phase 1: [名称] - status: pending
-- [ ] 子任务 A
-- [ ] 子任务 B
-
-### Phase 2: [名称] - status: pending
-- [ ] 子任务 C
-
-## 错误记录
-| Error | Attempt | Resolution |
-|-------|---------|------------|
-```
-
-### findings.md — 研究发现
-```markdown
-# 发现与调研
-## 关键发现
-- [发现内容]
-
-## 待确认
-- [待确认项]
-```
-
-### progress.md — 进度日志
-```markdown
-# 进度日志
-## Session [日期]
-- [x] 已完成事项
-- [ ] 进行中事项
-- 问题/阻塞: [描述]
-```
-
-## 关键规则
-1. **先建计划再动手** — 复杂任务没有 task_plan.md 禁止开始
-2. **2-Action 规则** — 每执行 2 次查看/搜索操作后，立即将发现写入文件
-3. **决策前重读计划** — 保持目标在注意力窗口中
-4. **行动后更新** — 完成阶段后标记状态、记录错误
-5. **记录所有错误** — 构建知识库、避免重复
-
-## 3-Strike 错误协议
-- 第 1 次：诊断 & 修复
-- 第 2 次：换方法/工具
-- 第 3 次：重新审视假设
-- 3 次后：上报用户
-
-## 用户请求
-$ARGUMENTS
+Then guide the user through the planning workflow.
